@@ -6,13 +6,6 @@
 
 ---
 
-## 🌐 Acesse o portfólio online
-
-**[guilherme-bernardes.github.io/portfolio](https://guilherme-bernardes.github.io/portfolio)**  
-*(substitua pela URL real após publicar no GitHub Pages)*
-
----
-
 ## 👤 Sobre
 
 Profissional com mais de **3 anos de experiência** na área comercial, especializado em análise de desempenho, automação de processos e suporte estratégico à tomada de decisão. Combino visão de negócios com habilidades técnicas para gerar impacto mensurável em resultados comerciais e eficiência operacional.
