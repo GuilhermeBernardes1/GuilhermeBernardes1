@@ -116,26 +116,28 @@ The first real use case was a Portuguese-language WhatsApp assistant for a 2026 
 The same assistant rebuilt as a Node.js server, with the natural-timing logic ported from the n8n flow.
 
 ```mermaid
-flowchart TD
-    U(["User on WhatsApp"]) <--> W["Meta WhatsApp Cloud API"]
-    W --> S["Node.js and Express webhook<br/>hosted on Render"]
-    S <-.-> C["Chatwoot bridge<br/>the bot goes silent when a human replies"]
-    S --> R{{"Rule layer<br/>fixed replies, keyword triggers,<br/>intent detection"}}
-    R -- "volunteer or idea" --> X["Small LLM extracts the name<br/>and registers it with a tool call"]
-    R -- "open conversation" --> F["LLM chain, 12 s timeout each<br/>Claude Haiku, then Groq Llama 3.1,<br/>then Gemini Flash"]
-    F -- "all providers fail" --> SAFE["Safe reply: I would rather<br/>confirm than give a wrong answer"]
-    F --> O["Split into bubbles<br/>natural read and typing timing"]
+flowchart LR
+    U(["WhatsApp user"]) <--> W["Meta Cloud API"]
+    W --> S["Node.js webhook<br/>on Render"]
+    S <-.-> C["Chatwoot<br/>human handoff"]
+    S --> R{{"Rules and<br/>intents"}}
+    R -- "volunteer or idea" --> X["Name extraction<br/>small LLM"]
+    R -- "chat" --> F["LLM fallback<br/>Claude, Groq, Gemini"]
+    F -- "all fail" --> SAFE["Safe reply"]
+    F --> O["Bubbles and<br/>natural timing"]
     X --> O
     SAFE --> O
-    O -- "reply" --> W
+    O --> W
 
     classDef ai fill:#1448D8,stroke:#0A1E64,color:#ffffff
     class F,X ai
 ```
 
-- Automatic fallback across three LLM providers, with a timeout so no provider can stall a reply
-- Tool calling with one schema adapted to each provider's format
-- Human handoff through Chatwoot in the same conversation thread
+- Automatic fallback across three LLM providers (Claude Haiku, Groq Llama 3.1, Gemini Flash), each with a 12-second timeout so no provider can stall a reply
+- When every provider fails, a safe reply says the assistant would rather confirm than give a wrong answer
+- A rule layer runs before the LLM: fixed replies, keyword triggers and intent detection; for volunteer sign-ups and idea suggestions, a small LLM extracts only the name (and the idea) from free text
+- Tool calling (register a volunteer, register an idea, flag a conversation for a human) with one schema adapted to each provider's format
+- Human handoff through Chatwoot: the bot goes silent when a person replies in the same thread
 - Read receipts and typing indicators timed like a person typing
 
 `Node.js` `Express` `Anthropic Claude` `Groq` `Google Gemini` `WhatsApp Cloud API` `Chatwoot` `Render`
