@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title desc">
+  <title id="title">Guilherme Bernardes</title>
+  <desc id="desc">AI Evaluation and Automation. Brazilian Portuguese, prompt testing, data quality, LLM workflows, n8n, APIs and analytics.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050B1F"/>
+      <stop offset="1" stop-color="#0B1B4D"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="0.8" cy="0" r="0.6">
+      <stop offset="0" stop-color="#1448D8" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#1448D8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="0.05" cy="1" r="0.5">
+      <stop offset="0" stop-color="#0EA5E9" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#0EA5E9" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1448D8"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#94A3B8" fill-opacity="0.13"/>
+    </pattern>
+    <clipPath id="frame">
+      <rect width="1280" height="320" rx="20"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1280" height="320" fill="url(#bg)"/>
+    <rect width="1280" height="320" fill="url(#dots)"/>
+    <rect width="1280" height="320" fill="url(#glowA)"/>
+    <rect width="1280" height="320" fill="url(#glowB)"/>
+  </g>
+
+  <!-- Left: identity -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="64" y="92" font-family="Consolas, 'SFMono-Regular', Menlo, 'Liberation Mono', monospace" font-size="15" letter-spacing="2.5" fill="#7FA8FF">AI EVALUATION · LLM QA · AUTOMATION</text>
+    <text x="62" y="158" font-size="56" font-weight="700" fill="#FFFFFF">Guilherme Bernardes</text>
+    <text x="64" y="200" font-size="20" fill="#B6C3E0">Brazilian Portuguese · Prompt testing · Data quality</text>
+    <text x="64" y="228" font-size="20" fill="#B6C3E0">LLM workflows · n8n · APIs · Analytics</text>
+
+    <g font-size="14" font-weight="600" fill="#DCE6FF" text-anchor="middle">
+      <rect x="64" y="252" width="176" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#94A3B8" stroke-opacity="0.3"/>
+      <text x="152" y="273">Portuguese · Native</text>
+      <rect x="252" y="252" width="132" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#94A3B8" stroke-opacity="0.3"/>
+      <text x="318" y="273">English · B2</text>
+      <rect x="396" y="252" width="168" height="32" rx="16" fill="#FFFFFF" fill-opacity="0.06" stroke="#94A3B8" stroke-opacity="0.3"/>
+      <text x="480" y="273">Serra, ES · Brazil</text>
+    </g>
+  </g>
+
+  <!-- Right: response review card -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <rect x="792" y="52" width="424" height="216" rx="16" fill="#FFFFFF" fill-opacity="0.045" stroke="#94A3B8" stroke-opacity="0.28"/>
+    <circle cx="822" cy="86" r="5" fill="#22C55E">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="838" y="91" font-size="15" font-weight="600" fill="#E2E8F0">Response review · pt-BR</text>
+    <text x="1192" y="91" text-anchor="end" font-family="Consolas, 'SFMono-Regular', Menlo, monospace" font-size="12" letter-spacing="1.5" fill="#7FA8FF">LLM QA</text>
+    <line x1="812" y1="106" x2="1196" y2="106" stroke="#94A3B8" stroke-opacity="0.2"/>
+
+    <g font-size="14" fill="#B6C3E0">
+      <text x="816" y="134">Accuracy</text>
+      <text x="816" y="162">Clarity &amp; fluency</text>
+      <text x="816" y="190">Tone</text>
+      <text x="816" y="218">Instruction-following</text>
+      <text x="816" y="246">Safety</text>
+    </g>
+
+    <g fill="#94A3B8" fill-opacity="0.18">
+      <rect x="988" y="126" width="164" height="8" rx="4"/>
+      <rect x="988" y="154" width="164" height="8" rx="4"/>
+      <rect x="988" y="182" width="164" height="8" rx="4"/>
+      <rect x="988" y="210" width="164" height="8" rx="4"/>
+      <rect x="988" y="238" width="164" height="8" rx="4"/>
+    </g>
+    <g fill="url(#bar)">
+      <rect x="988" y="126" width="152" height="8" rx="4"><animate attributeName="width" from="0" to="152" dur="1.1s" begin="0.2s" fill="freeze"/></rect>
+      <rect x="988" y="154" width="160" height="8" rx="4"><animate attributeName="width" from="0" to="160" dur="1.1s" begin="0.4s" fill="freeze"/></rect>
+      <rect x="988" y="182" width="142" height="8" rx="4"><animate attributeName="width" from="0" to="142" dur="1.1s" begin="0.6s" fill="freeze"/></rect>
+      <rect x="988" y="210" width="156" height="8" rx="4"><animate attributeName="width" from="0" to="156" dur="1.1s" begin="0.8s" fill="freeze"/></rect>
+      <rect x="988" y="238" width="164" height="8" rx="4"><animate attributeName="width" from="0" to="164" dur="1.1s" begin="1.0s" fill="freeze"/></rect>
+    </g>
+
+    <g fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M1170 130 l4 4 l8 -8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.3s" fill="freeze"/></path>
+      <path d="M1170 158 l4 4 l8 -8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.5s" fill="freeze"/></path>
+      <path d="M1170 186 l4 4 l8 -8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.7s" fill="freeze"/></path>
+      <path d="M1170 214 l4 4 l8 -8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="1.9s" fill="freeze"/></path>
+      <path d="M1170 242 l4 4 l8 -8"><animate attributeName="opacity" values="0;1" dur="0.4s" begin="2.1s" fill="freeze"/></path>
+    </g>
+  </g>
+</svg>
