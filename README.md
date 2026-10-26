@@ -116,7 +116,7 @@ The first real use case was a Portuguese-language WhatsApp assistant for a 2026 
 The same assistant rebuilt as a Node.js server, with the natural-timing logic ported from the n8n flow.
 
 ```mermaid
-flowchart LR
+flowchart TD
     U(["WhatsApp user"]) <--> W["Meta Cloud API"]
     W --> S["Node.js webhook<br/>on Render"]
     S <-.-> C["Chatwoot<br/>human handoff"]
